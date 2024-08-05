@@ -1,0 +1,39 @@
+/* CSS Reset - Normalize */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font size adjustments after orientation changes */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Set a default font */
+  background-color: #e8e8e88f; /* Set a default background color */
+  color: #333; /* Set a default text color */
+}
+
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent */
+}
+
+ul,
+ol {
+  list-style: none; /* Remove default list styles */
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px; /* Add padding to table cells */
+  border: 1px solid #ddd; /* Add border to table cells */
+}
