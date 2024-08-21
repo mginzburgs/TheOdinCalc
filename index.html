@@ -9,15 +9,53 @@
 </head>
 
 <body class="page">
-    <script src="path/to/your/script.js" defer></script>
+    <script src="app.js" defer></script>
     <div class="page__container">
         <!-- HTML -->
         <!-- HEADER  -->
-        <header>
+        <header class="header">
+            <a href="index.html" class="header__logo-link">
+                <img class="header__logo-image" src="img/logo.webp" alt="logo" width="64px" height="64px">
+            </a>
+            <h1 class="header__title">THE CALC</h1>
         </header>
 
         <!-- MAIN  -->
-        <main>
+        <main class="page__main">
+            <section class="calc">
+                <div class="calc__display">
+                    <input type="text" class="calc__input">
+                </div>
+
+                <div class="calc__buttons">
+                    <div class="buttons__top-nav">
+                        <button class="buttons__C">C</button>
+                        <button class="buttons__sign">+/-</button>
+                        <button class="buttons__percent">%</button>
+
+                    </div>
+                    <div class="buttons__side-nav">
+                        <button class="buttons__divide" value="divide">&divide</button>
+                        <button class="buttons__multiply" value="times">&times</button>
+                        <button class="buttons__minus" value="minus">&minus;</button>
+                        <button class="buttons__plus" value="plus">&plus;</button>
+                        <button class="buttons__equal" value="equals">&equals;</button>
+                    </div>
+                    <div class="buttons__numbers numbers">
+                        <button class="numbers__one">1</button>
+                        <button class="numbers__two">2</button>
+                        <button class="numbers__three">3</button>
+                        <button class="numbers__four">4</button>
+                        <button class="numbers__five">5</button>
+                        <button class="numbers__six">6</button>
+                        <button class="numbers__seven">7</button>
+                        <button class="numbers__eight">8</button>
+                        <button class="numbers__nine">9</button>
+                        <button class="numbers__zero">0</button>
+                        <button class="numbers__dot">.</button>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!-- FOOTER  -->

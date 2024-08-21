@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   font-family: Arial, sans-serif; /* Set a default font */
-  background-color: #e8e8e88f; /* Set a default background color */
+  background-color: #908c8c; /* Set a default background color */
   color: #333; /* Set a default text color */
 }
 
@@ -36,4 +36,129 @@ th,
 td {
   padding: 8px; /* Add padding to table cells */
   border: 1px solid #ddd; /* Add border to table cells */
+}
+
+.page {
+  width: 100%;
+}
+
+.page__container {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 800px;
+  background-color: antiquewhite;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.header__logo-image {
+  background-color: inherit;
+}
+
+.header__logo-title {
+  font-size: 24px;
+}
+
+.page__main {
+  width: 100%;
+  padding: 100px;
+}
+
+.calc {
+  background-color: darkgrey;
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.calc__display {
+  background-color: rgb(14, 136, 16);
+  height: 50px;
+  min-width: 300px;
+  color: white;
+}
+
+.calc__buttons {
+  background-color: rgb(57, 56, 56);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "topNav sideNav" "numpad sideNav";
+  gap: 10px;
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.buttons__top-nav {
+  grid-area: topNav;
+  display: flex;
+  align-self: start;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.buttons__side-nav {
+  grid-area: sideNav;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 5px;
+}
+
+.numbers {
+  grid-area: numpad;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.numbers__zero {
+  grid-column: span 2;
+  border-radius: 40px;
+  width: auto;
+  background-color: rgb(14, 136, 16);
+  color: white;
+}
+
+.buttons__equal {
+  grid-row: span 2;
+  height: 80px;
+  border-radius: 40px;
+  background-color: rgb(14, 136, 16);
+  color: white;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.calc__input {
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
 }
